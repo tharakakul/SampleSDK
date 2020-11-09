@@ -1,64 +1,137 @@
-<soho-icons></soho-icons>
-<soho-icons-empty></soho-icons-empty>
+<div class="content">
+   <div class="search-wrapper">
+      <nz-collapse nzGhost nzExpandIconPosition="right">
+         <nz-collapse-panel *ngFor="let panel of panels" [nzHeader]="panel.name" [nzActive]="panel.active" [nzDisabled]="panel.disabled">
+            <div nz-row [nzGutter]="16">
+               <div nz-col nzSpan="2"><label>PO No:</label></div>
+               <div nz-col nzSpan="4">
+                  <nz-select ngModel="lucy">
+                     <nz-option nzValue="1" nzLabel="Option 1"></nz-option>
+                     <nz-option nzValue="2" nzLabel="Option 2"></nz-option>
+                     <nz-option nzValue="3" nzLabel="Option 3" nzDisabled></nz-option>
+                   </nz-select>
+               </div>
 
-<div soho-busyindicator [activated]="isBusy" [blockUI]="true" [displayDelay]="0">
+               <div nz-col nzSpan="2"><label>PO Type:</label></div>
+               <div nz-col nzSpan="4">
+                  <nz-select ngModel="lucy">
+                     <nz-option nzValue="1" nzLabel="Option 1"></nz-option>
+                     <nz-option nzValue="2" nzLabel="Option 2"></nz-option>
+                     <nz-option nzValue="3" nzLabel="Option 3" nzDisabled></nz-option>
+                   </nz-select>
+               </div>
 
-   <div class="row card top-padding">
-      <div class="form-responsive row">
-         <div class="six columns">
-            <div class="field">
-               <h1>User context</h1>
-               <p>Click the Load button to show all M3 user context values current values that will differ if running
-                  within
-                  H5 and for example the company has been changed.</p>
-            </div>
-            <button soho-button="primary" (click)="onClickLoad()">Load</button>
-         </div>
-      </div>
-      <div class="form-responsive row top-padding">
-         <div class="six columns">
-            <div class="field">
-               <label for="di-cono">Company</label>
-               <input id="di-cono" [(ngModel)]="company" readonly />
-            </div>
-         </div>
-         <div class="six columns">
-            <div class="field">
-               <label for="di-ccono">Current company</label>
-               <input id="di-ccono" [(ngModel)]="currentCompany" readonly />
-            </div>
-         </div>
-      </div>
+               <div nz-col nzSpan="2"><label>Style:</label></div>
+               <div nz-col nzSpan="4">
+                  <nz-select ngModel="lucy">
+                     <nz-option nzValue="1" nzLabel="Option 1"></nz-option>
+                     <nz-option nzValue="2" nzLabel="Option 2"></nz-option>
+                     <nz-option nzValue="3" nzLabel="Option 3" nzDisabled></nz-option>
+                   </nz-select>
+               </div>
 
-      <div class="form-responsive row">
-         <div class="six columns">
-            <div class="field">
-               <label for="di-divi">Division</label>
-               <input id="di-divi" [(ngModel)]="division" readonly />
-            </div>
-         </div>
+               <div nz-col nzSpan="2"><label>Inspector:</label></div>
+               <div nz-col nzSpan="4">
+                  <nz-select ngModel="lucy">
+                     <nz-option nzValue="1" nzLabel="Option 1"></nz-option>
+                     <nz-option nzValue="2" nzLabel="Option 2"></nz-option>
+                     <nz-option nzValue="3" nzLabel="Option 3" nzDisabled></nz-option>
+                   </nz-select>
+               </div>
+             </div>
 
-         <div class="six columns">
-            <div class="field">
-               <label for="di-cdivi">Current division</label>
-               <input id="di-cdivi" [(ngModel)]="currentDivision" readonly />
-            </div>
-         </div>
-      </div>
+             <div nz-row [nzGutter]="16">
+               <div nz-col nzSpan="2"><label>X-Factory Date:</label></div>
+               <div nz-col nzSpan="4">
+                  <nz-date-picker></nz-date-picker>
+               </div>
 
-      <div class="form-responsive row">
-         <div class="six columns">
-            <div class="field">
-               <label for="di-lang">Language</label>
-               <input id="di-lang" [(ngModel)]="language" readonly />
-            </div>
-         </div>
-         <div class="six columns">
-            <div class="field">
-               <label for="di-clang">Current language</label>
-               <input id="di-clang" [(ngModel)]="currentLanguage" readonly />
-            </div>
-         </div>
-      </div>
+               <div nz-col nzSpan="2"><label>PO Type:</label></div>
+               <div nz-col nzSpan="4">
+                  <nz-select ngModel="lucy">
+                     <nz-option nzValue="1" nzLabel="Option 1"></nz-option>
+                     <nz-option nzValue="2" nzLabel="Option 2"></nz-option>
+                     <nz-option nzValue="3" nzLabel="Option 3" nzDisabled></nz-option>
+                   </nz-select>
+               </div>
+
+               <div nz-col nzSpan="2"><label>Factory Name:</label></div>
+               <div nz-col nzSpan="4">
+                  <nz-select ngModel="lucy">
+                     <nz-option nzValue="1" nzLabel="Option 1"></nz-option>
+                     <nz-option nzValue="2" nzLabel="Option 2"></nz-option>
+                     <nz-option nzValue="3" nzLabel="Option 3" nzDisabled></nz-option>
+                   </nz-select>
+               </div>
+
+               <div nz-col nzSpan="2"><label>Factory Destination:</label></div>
+               <div nz-col nzSpan="4">
+                  <nz-select ngModel="lucy">
+                     <nz-option nzValue="1" nzLabel="Option 1"></nz-option>
+                     <nz-option nzValue="2" nzLabel="Option 2"></nz-option>
+                     <nz-option nzValue="3" nzLabel="Option 3" nzDisabled></nz-option>
+                   </nz-select>
+               </div>
+             </div>
+
+             <div nz-row [nzGutter]="16">
+               <div nz-col nzSpan="4">
+                  <label nz-checkbox>Inspections Assigned to Me</label>
+               </div>
+
+               <div nz-col nzSpan="4">
+                  <label nz-checkbox>Approval Pending</label>
+               </div>
+
+               <nz-col nzSpan="16">
+                  <div nz-row nzJustify="end">
+                     <nz-space>
+                        <nz-space-item>
+                          <button nz-button nzType="default">Clear</button>
+                        </nz-space-item>
+                        <nz-space-item>
+                          <button nz-button nzType="primary">Add New PO</button>
+                        </nz-space-item>
+                        <button nz-button nzType="primary">Search</button>
+                     </nz-space>
+                  </div>
+               </nz-col>
+             </div>
+         </nz-collapse-panel>
+       </nz-collapse>
+   </div>
+
+   <div class="content-wrapper">
+      <nz-row>
+         <nz-col nzSpan="12">
+            <div class="sub-header">Search Results</div>
+         </nz-col>
+         <nz-col nzSpan="12">
+            <nz-row nzJustify="end">
+               <button nz-button nzType="default"><i nz-icon nzType="export" nzTheme="outline"></i>Download to Excel</button>
+            </nz-row>
+         </nz-col>
+      </nz-row>
+
+      <nz-row>
+         <nz-col nzSpan="24">
+            <nz-table #basicTable>
+               <thead>
+                 <tr>
+                   <th>PO ID</th>
+                   <th>Style</th>
+                   <th>Style Description</th>
+                   <th>Factory Name</th>
+                   <th>X-Factory Date</th>
+                   <th>Destination</th>
+                   <th>PO Type</th>
+                   <th>Inspection Point</th>
+                 </tr>
+               </thead>
+               <tbody>
+               </tbody>
+             </nz-table>
+         </nz-col>
+      </nz-row>
    </div>
 </div>

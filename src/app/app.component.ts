@@ -53,4 +53,13 @@ export class AppComponent extends CoreBase implements OnInit {
    private setBusy(isBusy: boolean) {
       this.isBusy = isBusy;
    }
+
+   panels = [
+      {
+        active: true,
+        name: '',
+        disabled: false,
+        icon: 'right'
+      }
+    ];
 }
