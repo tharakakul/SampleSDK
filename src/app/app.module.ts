@@ -20,6 +20,7 @@ import { NzSpaceModule } from 'ng-zorro-antd/space';
 import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzCollapseModule } from 'ng-zorro-antd/collapse';
+import { NzTimePickerModule } from 'ng-zorro-antd/time-picker';
 
 registerLocaleData(en);
 
@@ -42,7 +43,8 @@ registerLocaleData(en);
       NzSpaceModule,
       NzTableModule,
       NzIconModule,
-      NzCollapseModule
+      NzCollapseModule,
+      NzTimePickerModule
    ],
    providers: [
       {
