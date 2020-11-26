@@ -21,6 +21,8 @@ import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzCollapseModule } from 'ng-zorro-antd/collapse';
 import { NzTimePickerModule } from 'ng-zorro-antd/time-picker';
+import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
+
 
 registerLocaleData(en);
 
@@ -44,7 +46,8 @@ registerLocaleData(en);
       NzTableModule,
       NzIconModule,
       NzCollapseModule,
-      NzTimePickerModule
+      NzTimePickerModule,
+      DateInputsModule
    ],
    providers: [
       {

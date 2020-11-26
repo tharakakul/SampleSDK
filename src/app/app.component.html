@@ -41,14 +41,18 @@
              </div>
 
              <div nz-row [nzGutter]="16">
-               <div nz-col nzSpan="2"><label>X-Factory Date:</label></div>
+               <div nz-col nzSpan="2"><label>X-Factory Date/Time:</label></div>
                <div nz-col nzSpan="4">
-                  <nz-date-picker></nz-date-picker>
+                  <kendo-datetimepicker></kendo-datetimepicker>
                </div>
 
-               <div nz-col nzSpan="2"><label>Time:</label></div>
+               <div nz-col nzSpan="2"><label>PO Type:</label></div>
                <div nz-col nzSpan="4">
-                  <nz-time-picker></nz-time-picker>
+                  <nz-select ngModel="lucy">
+                     <nz-option nzValue="1" nzLabel="Option 1"></nz-option>
+                     <nz-option nzValue="2" nzLabel="Option 2"></nz-option>
+                     <nz-option nzValue="3" nzLabel="Option 3" nzDisabled></nz-option>
+                   </nz-select>
                </div>
 
                <div nz-col nzSpan="2"><label>Factory Name:</label></div>
